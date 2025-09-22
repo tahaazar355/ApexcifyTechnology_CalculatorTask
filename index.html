@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="calculator" role="application" aria-label="Calculator">
+        <div class="top-row">
+            <div class="brand">SimpleCalc</div>
+            <div class="sub">Supports keyboard • Live result</div>
+        </div>
+
+        <div class="screen" id="screen">
+            <div id="expression" class="expression" aria-live="polite" aria-atomic="true">0</div>
+            <div id="result" class="result small" aria-live="polite"></div>
+        </div>
+
+        <div class="pad" role="group" aria-label="Calculator keypad">
+            <button class="key func" data-key="clear" title="Escape — Clear">C</button>
+            <button class="key func" data-key="back" title="Backspace — Delete">⌫</button>
+            <button class="key func" data-key="percent" title="%">%</button>
+            <button class="key op" data-key="/" title="Divide">÷</button>
+
+            <button class="key" data-key="7">7</button>
+            <button class="key" data-key="8">8</button>
+            <button class="key" data-key="9">9</button>
+            <button class="key op" data-key="*">×</button>
+
+            <button class="key" data-key="4">4</button>
+            <button class="key" data-key="5">5</button>
+            <button class="key" data-key="6">6</button>
+            <button class="key op" data-key="-">−</button>
+
+            <button class="key" data-key="1">1</button>
+            <button class="key" data-key="2">2</button>
+            <button class="key" data-key="3">3</button>
+            <button class="key op" data-key="+">+</button>
+
+            <button class="key" data-key="0" style="grid-column:span 2">0</button>
+            <button class="key" data-key=".">.</button>
+            <button class="key equals" data-key="=" title="Enter — Evaluate">=</button>
+        </div>
+
+        <div class="kbd-hint">Keyboard: numbers, + − * /, Enter=equals, Esc=clear, Backspace=delete</div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
